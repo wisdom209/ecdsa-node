@@ -51,7 +51,7 @@ function Transfer({ address, setBalance }) {
 			});
 			setBalance(balance);
 		} catch (ex) {
-			alert(ex);
+			alert(ex.response.data.message);
 		}
 	}
 
